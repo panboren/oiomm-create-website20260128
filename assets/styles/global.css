@@ -1,0 +1,14 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+    position: relative;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.el-dialog__body {
+    padding: 10px 20px !important;
+}

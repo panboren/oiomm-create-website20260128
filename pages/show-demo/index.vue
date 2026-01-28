@@ -1,0 +1,1090 @@
+<template>
+  <animation-layer v-if="pageList && pageList.length>0" :pageList="pageList" :disable="false"></animation-layer>
+  <empty-template v-else></empty-template>
+</template>
+<script setup lang="ts">
+
+definePageMeta({
+  layout: false
+})
+import AnimationLayer from '~~/components/animation-layer/animation-layer.vue'
+
+
+let listData={
+  "id": 100,
+  "user_id": null,
+  "list": [
+    {
+      "templateView": "infinitePanelScrollAnimation",
+      "id": "20250127000000001",
+      "linkName": "PG20250127000000001",
+      "uuid": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+      "type": "panel",
+      "className": "panel20250127000000001",
+      "name": "首页",
+      "horizontal": false,
+      "style": {
+        "backgroundImage": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
+      },
+      "formData": {
+        "animationKeys": [],
+        "animationStyle": {}
+      },
+      "level": 1,
+      "children": [
+        {
+          "templateView": "infinitePanelScrollAnimation",
+          "id": "20250127000000002",
+          "linkName": "PN20250127000000002",
+          "uuid": "b2c3d4e5-f6a7-8901-bcde-f23456789012",
+          "type": "panel",
+          "className": "panel20250127000000002",
+          "name": "首页面板",
+          "horizontal": false,
+          "style": {
+            "backgroundImage": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
+          },
+          "formData": {
+            "animationKeys": [],
+            "animationStyle": {}
+          },
+          "level": 2,
+          "children": [
+            {
+              "type": "animation",
+              "uuid": "c3d4e5f6-a7b8-9012-cdef-345678901234",
+              "level": 3,
+              "name": "标题模块",
+              "id": "20250127000000003",
+              "linkName": "AN20250127000000003",
+              "dialogVisible": false,
+              "animationVisible": false,
+              "className": "animation20250127000000003",
+              "animationRef": null,
+              "formData": {
+                "type": "text",
+                "content": "欢迎来到<br/>智能动画世界",
+                "imgUrl": "",
+                "imgUrlName": "",
+                "swiperOptions": {
+                  "imgList": [
+                    {
+                      "imgUrl": "",
+                      "animationType": "Swipe"
+                    }
+                  ],
+                  "autoplay": true,
+                  "delay": 3000,
+                  "infinite": true,
+                  "controls": true,
+                  "pagination": true,
+                  "fluxIndex": true
+                },
+                "keys": [
+                  "w",
+                  "h",
+                  "x",
+                  "y",
+                  "background",
+                  "rotate",
+                  "scaleX",
+                  "scaleY",
+                  "skewX",
+                  "skewY",
+                  "color",
+                  "fontSize",
+                  "fontWeight",
+                  "textShadow"
+                ],
+                "style": {
+                  "x": 100,
+                  "y": 200,
+                  "w": 600,
+                  "h": 150,
+                  "color": "#ffffff",
+                  "fontSize": 64,
+                  "fontWeight": "bold",
+                  "textShadow": "2px 2px 8px rgba(0,0,0,0.3)"
+                },
+                "runKeys": [
+                  "toKey",
+                  "ease",
+                  "w",
+                  "h",
+                  "x",
+                  "y",
+                  "background",
+                  "opacity"
+                ],
+                "runStyle": {},
+                "hoverClass": [],
+                "hoverKeys": [],
+                "hoverStyle": {},
+                "animation": [
+                  {
+                    "animationKeys": [
+                      "duration",
+                      "w",
+                      "h",
+                      "x",
+                      "y",
+                      "background",
+                      "rotate",
+                      "scaleX",
+                      "scaleY",
+                      "skewX",
+                      "skewY",
+                      "color",
+                      "fontSize",
+                      "fontWeight",
+                      "textShadow",
+                      "repeat",
+                      "delay",
+                      "yoyo",
+                      "toKey",
+                      "ease"
+                    ],
+                    "animationStyle": {
+                      "duration": 1.5,
+                      "y": -50,
+                      "opacity": 0,
+                      "toKey": "from",
+                      "ease": "power3.out"
+                    }
+                  }
+                ],
+                "animationTab": 1,
+                "animationType": "scroll"
+              },
+              "pid": "20250127000000002",
+              "horizontal": false
+            },
+            {
+              "type": "animation",
+              "uuid": "d4e5f6a7-b8c9-0123-def0-456789012345",
+              "level": 3,
+              "name": "描述模块",
+              "id": "20250127000000004",
+              "linkName": "AN20250127000000004",
+              "dialogVisible": false,
+              "animationVisible": false,
+              "className": "animation20250127000000004",
+              "animationRef": null,
+              "formData": {
+                "type": "text",
+                "content": "基于GSAP的高性能动画引擎<br/>打造极致的视觉体验",
+                "imgUrl": "",
+                "imgUrlName": "",
+                "swiperOptions": {
+                  "imgList": [
+                    {
+                      "imgUrl": "",
+                      "animationType": "Swipe"
+                    }
+                  ],
+                  "autoplay": true,
+                  "delay": 3000,
+                  "infinite": true,
+                  "controls": true,
+                  "pagination": true,
+                  "fluxIndex": true
+                },
+                "keys": [
+                  "w",
+                  "h",
+                  "x",
+                  "y",
+                  "background",
+                  "rotate",
+                  "scaleX",
+                  "scaleY",
+                  "skewX",
+                  "skewY",
+                  "color",
+                  "fontSize",
+                  "fontWeight",
+                  "textShadow"
+                ],
+                "style": {
+                  "x": 100,
+                  "y": 380,
+                  "w": 500,
+                  "h": 100,
+                  "color": "#ffffff",
+                  "fontSize": 24,
+                  "fontWeight": "normal",
+                  "textShadow": "1px 1px 4px rgba(0,0,0,0.2)"
+                },
+                "runKeys": [
+                  "toKey",
+                  "ease",
+                  "w",
+                  "h",
+                  "x",
+                  "y",
+                  "background",
+                  "opacity"
+                ],
+                "runStyle": {},
+                "hoverClass": [],
+                "hoverKeys": [],
+                "hoverStyle": {},
+                "animation": [
+                  {
+                    "animationKeys": [
+                      "duration",
+                      "w",
+                      "h",
+                      "x",
+                      "y",
+                      "background",
+                      "rotate",
+                      "scaleX",
+                      "scaleY",
+                      "skewX",
+                      "skewY",
+                      "color",
+                      "fontSize",
+                      "fontWeight",
+                      "textShadow",
+                      "repeat",
+                      "delay",
+                      "yoyo",
+                      "toKey",
+                      "ease"
+                    ],
+                    "animationStyle": {
+                      "duration": 1.5,
+                      "delay": 0.3,
+                      "x": -100,
+                      "opacity": 0,
+                      "toKey": "from",
+                      "ease": "power3.out"
+                    }
+                  }
+                ],
+                "animationTab": 1,
+                "animationType": "scroll"
+              },
+              "pid": "20250127000000002",
+              "horizontal": false
+            }
+          ],
+          "pid": "20250127000000001",
+          "parentClassName": "panel20250127000000001"
+        }
+      ],
+      "pid": 0
+    },
+    {
+      "templateView": "infinitePanelScrollAnimation",
+      "id": "20250127000000005",
+      "linkName": "PG20250127000000005",
+      "uuid": "e5f6a7b8-c9d0-1234-ef01-567890123456",
+      "type": "panel",
+      "className": "panel20250127000000005",
+      "name": "功能展示",
+      "horizontal": false,
+      "style": {
+        "backgroundImage": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)"
+      },
+      "formData": {
+        "animationKeys": [],
+        "animationStyle": {}
+      },
+      "level": 1,
+      "children": [
+        {
+          "templateView": "infinitePanelScrollAnimation",
+          "id": "20250127000000006",
+          "linkName": "PN20250127000000006",
+          "uuid": "f6a7b8c9-d0e1-2345-f012-678901234567",
+          "type": "panel",
+          "className": "panel20250127000000006",
+          "name": "功能面板",
+          "horizontal": false,
+          "style": {
+            "backgroundImage": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)"
+          },
+          "formData": {
+            "animationKeys": [],
+            "animationStyle": {}
+          },
+          "level": 2,
+          "children": [
+            {
+              "type": "animation",
+              "uuid": "a7b8c9d0-e1f2-3456-0123-789012345678",
+              "level": 3,
+              "name": "功能1",
+              "id": "20250127000000007",
+              "linkName": "AN20250127000000007",
+              "dialogVisible": false,
+              "animationVisible": false,
+              "className": "animation20250127000000007",
+              "animationRef": null,
+              "formData": {
+                "type": "img",
+                "content": "",
+                "imgUrl": "",
+                "imgUrlName": "",
+                "swiperOptions": {
+                  "imgList": [
+                    {
+                      "imgUrl": "",
+                      "animationType": "Swipe"
+                    }
+                  ],
+                  "autoplay": true,
+                  "delay": 3000,
+                  "infinite": true,
+                  "controls": true,
+                  "pagination": true,
+                  "fluxIndex": true
+                },
+                "keys": [
+                  "w",
+                  "h",
+                  "x",
+                  "y",
+                  "background",
+                  "rotate",
+                  "scaleX",
+                  "scaleY",
+                  "skewX",
+                  "skewY",
+                  "color",
+                  "fontSize",
+                  "fontWeight",
+                  "textShadow"
+                ],
+                "style": {
+                  "x": 150,
+                  "y": 150,
+                  "w": 250,
+                  "h": 250,
+                  "background": "rgba(255,255,255,0.2)",
+                  "borderRadius": "20px",
+                  "boxShadow": "0 10px 40px rgba(0,0,0,0.2)",
+                  "display": "flex",
+                  "justifyContent": "center",
+                  "alignItems": "center"
+                },
+                "runKeys": [
+                  "toKey",
+                  "ease",
+                  "w",
+                  "h",
+                  "x",
+                  "y",
+                  "background",
+                  "opacity",
+                  "scale",
+                  "rotate"
+                ],
+                "runStyle": {},
+                "hoverClass": [],
+                "hoverKeys": [],
+                "hoverStyle": {
+                  "duration": 0.3,
+                  "scale": 1.05
+                },
+                "animation": [
+                  {
+                    "animationKeys": [
+                      "duration",
+                      "w",
+                      "h",
+                      "x",
+                      "y",
+                      "background",
+                      "rotate",
+                      "scaleX",
+                      "scaleY",
+                      "skewX",
+                      "skewY",
+                      "color",
+                      "fontSize",
+                      "fontWeight",
+                      "textShadow",
+                      "repeat",
+                      "delay",
+                      "yoyo",
+                      "toKey",
+                      "ease"
+                    ],
+                    "animationStyle": {
+                      "duration": 1,
+                      "scale": 0.5,
+                      "opacity": 0,
+                      "toKey": "from",
+                      "ease": "back.out(1.7)"
+                    }
+                  }
+                ],
+                "animationTab": 1,
+                "animationType": "scroll"
+              },
+              "pid": "20250127000000006",
+              "horizontal": false
+            },
+            {
+              "type": "animation",
+              "uuid": "b8c9d0e1-f2a3-4567-1234-890123456789",
+              "level": 3,
+              "name": "功能2",
+              "id": "20250127000000008",
+              "linkName": "AN20250127000000008",
+              "dialogVisible": false,
+              "animationVisible": false,
+              "className": "animation20250127000000008",
+              "animationRef": null,
+              "formData": {
+                "type": "img",
+                "content": "",
+                "imgUrl": "",
+                "imgUrlName": "",
+                "swiperOptions": {
+                  "imgList": [
+                    {
+                      "imgUrl": "",
+                      "animationType": "Swipe"
+                    }
+                  ],
+                  "autoplay": true,
+                  "delay": 3000,
+                  "infinite": true,
+                  "controls": true,
+                  "pagination": true,
+                  "fluxIndex": true
+                },
+                "keys": [
+                  "w",
+                  "h",
+                  "x",
+                  "y",
+                  "background",
+                  "rotate",
+                  "scaleX",
+                  "scaleY",
+                  "skewX",
+                  "skewY",
+                  "color",
+                  "fontSize",
+                  "fontWeight",
+                  "textShadow"
+                ],
+                "style": {
+                  "x": 500,
+                  "y": 150,
+                  "w": 250,
+                  "h": 250,
+                  "background": "rgba(255,255,255,0.2)",
+                  "borderRadius": "20px",
+                  "boxShadow": "0 10px 40px rgba(0,0,0,0.2)",
+                  "display": "flex",
+                  "justifyContent": "center",
+                  "alignItems": "center"
+                },
+                "runKeys": [
+                  "toKey",
+                  "ease",
+                  "w",
+                  "h",
+                  "x",
+                  "y",
+                  "background",
+                  "opacity",
+                  "scale",
+                  "rotate"
+                ],
+                "runStyle": {},
+                "hoverClass": [],
+                "hoverKeys": [],
+                "hoverStyle": {
+                  "duration": 0.3,
+                  "scale": 1.05
+                },
+                "animation": [
+                  {
+                    "animationKeys": [
+                      "duration",
+                      "w",
+                      "h",
+                      "x",
+                      "y",
+                      "background",
+                      "rotate",
+                      "scaleX",
+                      "scaleY",
+                      "skewX",
+                      "skewY",
+                      "color",
+                      "fontSize",
+                      "fontWeight",
+                      "textShadow",
+                      "repeat",
+                      "delay",
+                      "yoyo",
+                      "toKey",
+                      "ease"
+                    ],
+                    "animationStyle": {
+                      "duration": 1,
+                      "delay": 0.2,
+                      "scale": 0.5,
+                      "opacity": 0,
+                      "toKey": "from",
+                      "ease": "back.out(1.7)"
+                    }
+                  }
+                ],
+                "animationTab": 1,
+                "animationType": "scroll"
+              },
+              "pid": "20250127000000006",
+              "horizontal": false
+            },
+            {
+              "type": "animation",
+              "uuid": "c9d0e1f2-a3b4-5678-2345-901234567890",
+              "level": 3,
+              "name": "功能3",
+              "id": "20250127000000009",
+              "linkName": "AN20250127000000009",
+              "dialogVisible": false,
+              "animationVisible": false,
+              "className": "animation20250127000000009",
+              "animationRef": null,
+              "formData": {
+                "type": "img",
+                "content": "",
+                "imgUrl": "",
+                "imgUrlName": "",
+                "swiperOptions": {
+                  "imgList": [
+                    {
+                      "imgUrl": "",
+                      "animationType": "Swipe"
+                    }
+                  ],
+                  "autoplay": true,
+                  "delay": 3000,
+                  "infinite": true,
+                  "controls": true,
+                  "pagination": true,
+                  "fluxIndex": true
+                },
+                "keys": [
+                  "w",
+                  "h",
+                  "x",
+                  "y",
+                  "background",
+                  "rotate",
+                  "scaleX",
+                  "scaleY",
+                  "skewX",
+                  "skewY",
+                  "color",
+                  "fontSize",
+                  "fontWeight",
+                  "textShadow"
+                ],
+                "style": {
+                  "x": 150,
+                  "y": 450,
+                  "w": 250,
+                  "h": 250,
+                  "background": "rgba(255,255,255,0.2)",
+                  "borderRadius": "20px",
+                  "boxShadow": "0 10px 40px rgba(0,0,0,0.2)",
+                  "display": "flex",
+                  "justifyContent": "center",
+                  "alignItems": "center"
+                },
+                "runKeys": [
+                  "toKey",
+                  "ease",
+                  "w",
+                  "h",
+                  "x",
+                  "y",
+                  "background",
+                  "opacity",
+                  "scale",
+                  "rotate"
+                ],
+                "runStyle": {},
+                "hoverClass": [],
+                "hoverKeys": [],
+                "hoverStyle": {
+                  "duration": 0.3,
+                  "scale": 1.05
+                },
+                "animation": [
+                  {
+                    "animationKeys": [
+                      "duration",
+                      "w",
+                      "h",
+                      "x",
+                      "y",
+                      "background",
+                      "rotate",
+                      "scaleX",
+                      "scaleY",
+                      "skewX",
+                      "skewY",
+                      "color",
+                      "fontSize",
+                      "fontWeight",
+                      "textShadow",
+                      "repeat",
+                      "delay",
+                      "yoyo",
+                      "toKey",
+                      "ease"
+                    ],
+                    "animationStyle": {
+                      "duration": 1,
+                      "delay": 0.4,
+                      "scale": 0.5,
+                      "opacity": 0,
+                      "toKey": "from",
+                      "ease": "back.out(1.7)"
+                    }
+                  }
+                ],
+                "animationTab": 1,
+                "animationType": "scroll"
+              },
+              "pid": "20250127000000006",
+              "horizontal": false
+            },
+            {
+              "type": "animation",
+              "uuid": "d0e1f2a3-b4c5-6789-3456-012345678901",
+              "level": 3,
+              "name": "功能4",
+              "id": "20250127000000010",
+              "linkName": "AN20250127000000010",
+              "dialogVisible": false,
+              "animationVisible": false,
+              "className": "animation20250127000000010",
+              "animationRef": null,
+              "formData": {
+                "type": "img",
+                "content": "",
+                "imgUrl": "",
+                "imgUrlName": "",
+                "swiperOptions": {
+                  "imgList": [
+                    {
+                      "imgUrl": "",
+                      "animationType": "Swipe"
+                    }
+                  ],
+                  "autoplay": true,
+                  "delay": 3000,
+                  "infinite": true,
+                  "controls": true,
+                  "pagination": true,
+                  "fluxIndex": true
+                },
+                "keys": [
+                  "w",
+                  "h",
+                  "x",
+                  "y",
+                  "background",
+                  "rotate",
+                  "scaleX",
+                  "scaleY",
+                  "skewX",
+                  "skewY",
+                  "color",
+                  "fontSize",
+                  "fontWeight",
+                  "textShadow"
+                ],
+                "style": {
+                  "x": 500,
+                  "y": 450,
+                  "w": 250,
+                  "h": 250,
+                  "background": "rgba(255,255,255,0.2)",
+                  "borderRadius": "20px",
+                  "boxShadow": "0 10px 40px rgba(0,0,0,0.2)",
+                  "display": "flex",
+                  "justifyContent": "center",
+                  "alignItems": "center"
+                },
+                "runKeys": [
+                  "toKey",
+                  "ease",
+                  "w",
+                  "h",
+                  "x",
+                  "y",
+                  "background",
+                  "opacity",
+                  "scale",
+                  "rotate"
+                ],
+                "runStyle": {},
+                "hoverClass": [],
+                "hoverKeys": [],
+                "hoverStyle": {
+                  "duration": 0.3,
+                  "scale": 1.05
+                },
+                "animation": [
+                  {
+                    "animationKeys": [
+                      "duration",
+                      "w",
+                      "h",
+                      "x",
+                      "y",
+                      "background",
+                      "rotate",
+                      "scaleX",
+                      "scaleY",
+                      "skewX",
+                      "skewY",
+                      "color",
+                      "fontSize",
+                      "fontWeight",
+                      "textShadow",
+                      "repeat",
+                      "delay",
+                      "yoyo",
+                      "toKey",
+                      "ease"
+                    ],
+                    "animationStyle": {
+                      "duration": 1,
+                      "delay": 0.6,
+                      "scale": 0.5,
+                      "opacity": 0,
+                      "toKey": "from",
+                      "ease": "back.out(1.7)"
+                    }
+                  }
+                ],
+                "animationTab": 1,
+                "animationType": "scroll"
+              },
+              "pid": "20250127000000006",
+              "horizontal": false
+            }
+          ],
+          "pid": "20250127000000005",
+          "parentClassName": "panel20250127000000005"
+        }
+      ],
+      "pid": 0
+    },
+    {
+      "templateView": "infinitePanelScrollAnimation",
+      "id": "20250127000000011",
+      "linkName": "PG20250127000000011",
+      "uuid": "e1f2a3b4-c5d6-7890-4567-123456789012",
+      "type": "panel",
+      "className": "panel20250127000000011",
+      "name": "联系我们",
+      "horizontal": false,
+      "style": {
+        "backgroundImage": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)"
+      },
+      "formData": {
+        "animationKeys": [],
+        "animationStyle": {}
+      },
+      "level": 1,
+      "children": [
+        {
+          "templateView": "infinitePanelScrollAnimation",
+          "id": "20250127000000012",
+          "linkName": "PN20250127000000012",
+          "uuid": "f2a3b4c5-d6e7-8901-5678-234567890123",
+          "type": "panel",
+          "className": "panel20250127000000012",
+          "name": "联系面板",
+          "horizontal": false,
+          "style": {
+            "backgroundImage": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)"
+          },
+          "formData": {
+            "animationKeys": [],
+            "animationStyle": {}
+          },
+          "level": 2,
+          "children": [
+            {
+              "type": "animation",
+              "uuid": "a3b4c5d6-e7f8-9012-6789-345678901234",
+              "level": 3,
+              "name": "联系标题",
+              "id": "20250127000000013",
+              "linkName": "AN20250127000000013",
+              "dialogVisible": false,
+              "animationVisible": false,
+              "className": "animation20250127000000013",
+              "animationRef": null,
+              "formData": {
+                "type": "text",
+                "content": "联系我们",
+                "imgUrl": "",
+                "imgUrlName": "",
+                "swiperOptions": {
+                  "imgList": [
+                    {
+                      "imgUrl": "",
+                      "animationType": "Swipe"
+                    }
+                  ],
+                  "autoplay": true,
+                  "delay": 3000,
+                  "infinite": true,
+                  "controls": true,
+                  "pagination": true,
+                  "fluxIndex": true
+                },
+                "keys": [
+                  "w",
+                  "h",
+                  "x",
+                  "y",
+                  "background",
+                  "rotate",
+                  "scaleX",
+                  "scaleY",
+                  "skewX",
+                  "skewY",
+                  "color",
+                  "fontSize",
+                  "fontWeight",
+                  "textShadow"
+                ],
+                "style": {
+                  "x": 325,
+                  "y": 150,
+                  "w": 350,
+                  "h": 80,
+                  "color": "#ffffff",
+                  "fontSize": 48,
+                  "fontWeight": "bold",
+                  "textShadow": "2px 2px 8px rgba(0,0,0,0.3)"
+                },
+                "runKeys": [
+                  "toKey",
+                  "ease",
+                  "w",
+                  "h",
+                  "x",
+                  "y",
+                  "background",
+                  "opacity"
+                ],
+                "runStyle": {},
+                "hoverClass": [],
+                "hoverKeys": [],
+                "hoverStyle": {},
+                "animation": [
+                  {
+                    "animationKeys": [
+                      "duration",
+                      "w",
+                      "h",
+                      "x",
+                      "y",
+                      "background",
+                      "rotate",
+                      "scaleX",
+                      "scaleY",
+                      "skewX",
+                      "skewY",
+                      "color",
+                      "fontSize",
+                      "fontWeight",
+                      "textShadow",
+                      "repeat",
+                      "delay",
+                      "yoyo",
+                      "toKey",
+                      "ease"
+                    ],
+                    "animationStyle": {
+                      "duration": 1.2,
+                      "y": -30,
+                      "opacity": 0,
+                      "toKey": "from",
+                      "ease": "power3.out"
+                    }
+                  }
+                ],
+                "animationTab": 1,
+                "animationType": "scroll"
+              },
+              "pid": "20250127000000012",
+              "horizontal": false
+            },
+            {
+              "type": "animation",
+              "uuid": "b4c5d6e7-f8a9-0123-7890-456789012345",
+              "level": 3,
+              "name": "联系内容",
+              "id": "20250127000000014",
+              "linkName": "AN20250127000000014",
+              "dialogVisible": false,
+              "animationVisible": false,
+              "className": "animation20250127000000014",
+              "animationRef": null,
+              "formData": {
+                "type": "text",
+                "content": "邮箱: contact@example.com<br/>电话: +86 123 4567 8900<br/>地址: 北京市朝阳区",
+                "imgUrl": "",
+                "imgUrlName": "",
+                "swiperOptions": {
+                  "imgList": [
+                    {
+                      "imgUrl": "",
+                      "animationType": "Swipe"
+                    }
+                  ],
+                  "autoplay": true,
+                  "delay": 3000,
+                  "infinite": true,
+                  "controls": true,
+                  "pagination": true,
+                  "fluxIndex": true
+                },
+                "keys": [
+                  "w",
+                  "h",
+                  "x",
+                  "y",
+                  "background",
+                  "rotate",
+                  "scaleX",
+                  "scaleY",
+                  "skewX",
+                  "skewY",
+                  "color",
+                  "fontSize",
+                  "fontWeight",
+                  "textShadow"
+                ],
+                "style": {
+                  "x": 300,
+                  "y": 280,
+                  "w": 400,
+                  "h": 200,
+                  "color": "#ffffff",
+                  "fontSize": 20,
+                  "fontWeight": "normal",
+                  "textShadow": "1px 1px 4px rgba(0,0,0,0.2)"
+                },
+                "runKeys": [
+                  "toKey",
+                  "ease",
+                  "w",
+                  "h",
+                  "x",
+                  "y",
+                  "background",
+                  "opacity"
+                ],
+                "runStyle": {},
+                "hoverClass": [],
+                "hoverKeys": [],
+                "hoverStyle": {},
+                "animation": [
+                  {
+                    "animationKeys": [
+                      "duration",
+                      "w",
+                      "h",
+                      "x",
+                      "y",
+                      "background",
+                      "rotate",
+                      "scaleX",
+                      "scaleY",
+                      "skewX",
+                      "skewY",
+                      "color",
+                      "fontSize",
+                      "fontWeight",
+                      "textShadow",
+                      "repeat",
+                      "delay",
+                      "yoyo",
+                      "toKey",
+                      "ease"
+                    ],
+                    "animationStyle": {
+                      "duration": 1.2,
+                      "delay": 0.3,
+                      "x": -50,
+                      "opacity": 0,
+                      "toKey": "from",
+                      "ease": "power3.out"
+                    }
+                  }
+                ],
+                "animationTab": 1,
+                "animationType": "scroll"
+              },
+              "pid": "20250127000000012",
+              "horizontal": false
+            }
+          ],
+          "pid": "20250127000000011",
+          "parentClassName": "panel20250127000000011"
+        }
+      ],
+      "pid": 0
+    }
+  ],
+  "name": "智能动画展示",
+  "options": null,
+  "code": null,
+  "item": null,
+  "mask": null,
+  "templateView": "infinitePanelScrollAnimation"
+}
+
+
+let pageList = ref([])
+let list = listData.list ||  []
+pageList.value = list
+</script>
+<style scoped lang="scss">
+body {
+  overscroll-behavior: none;
+  height: 100vh;
+}
+
+.content-warp {
+  overflow-x: hidden;
+}
+
+.container-horizontal {
+  overscroll-behavior: none;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.panel {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+
+</style>

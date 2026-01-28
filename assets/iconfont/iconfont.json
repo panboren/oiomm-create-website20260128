@@ -1,0 +1,37 @@
+{
+  "id": "4761010",
+  "name": "创建网站",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "5008622",
+      "name": "钉子",
+      "font_class": "icon-test",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "30086054",
+      "name": "钉子",
+      "font_class": "bi-attribute-dingzi",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "35987039",
+      "name": "左双箭头",
+      "font_class": "zuoshuangjiantou",
+      "unicode": "e762",
+      "unicode_decimal": 59234
+    },
+    {
+      "icon_id": "35987042",
+      "name": "右双箭头",
+      "font_class": "youshuangjiantou",
+      "unicode": "e763",
+      "unicode_decimal": 59235
+    }
+  ]
+}
