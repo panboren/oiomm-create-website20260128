@@ -48,6 +48,8 @@ export const UseApi = () => {
         listData.value = data || {}
         let list = listData.value?.list ? JSON.parse(listData.value?.list) : []
         pageList.value = list
+        console.log(115, listData.value)
+        console.log(list)
         util.close()
         util.success()
         resolve(data)
