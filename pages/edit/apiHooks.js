@@ -44,6 +44,7 @@ export const UseApi = () => {
       try {
         util.open()
         let data = await homeApi.searchData(+param.id)
+        console.log(data)
         listData.value = data || {}
         let list = listData.value?.list ? JSON.parse(listData.value?.list) : []
         pageList.value = list
