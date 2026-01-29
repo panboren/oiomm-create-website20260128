@@ -1,7 +1,7 @@
 import { defineStore } from 'pinia'
 
 const USER_INFO = {
-  userName: '潘柏任',
+  userName: 'admin',
   id: 1,
   sex: '男'
 }
