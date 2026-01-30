@@ -46,7 +46,7 @@ let getHover = ()=>{
 let list = ref([
   {
     id: 0,
-    title: '自定义模版',
+    title: '横向模版',
     templateView: 'customizeAnimation',
     background: getColor(),
     ease: getHover()

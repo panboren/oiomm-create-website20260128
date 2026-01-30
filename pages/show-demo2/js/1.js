@@ -2027,3 +2027,172 @@ let listData = {
   'mask': null,
   'templateView': 'infinitePanelScrollAnimation'
 }
+
+
+let template1 = {
+  'name': '首页',
+  'templateView': 'customizeAnimation',
+  'projectName': '1',
+  'list': [{
+    'templateView': 'customizeAnimation',
+    'id': '202601291459297126373',
+    'linkName': 'PB202601291459297126373',
+    'uuid': '84e31aa7-218d-4f16-84d0-b6d7b0fefc81202601291459297126373',
+    'type': 'panel',
+    'className': 'panel202601291459297126373',
+    'name': '竖屏',
+    'horizontal': false,
+    'style': {'backgroundImage': ' linear-gradient(132deg, rgb(244, 208, 63) 0%, rgb(22, 160, 133) 100%)'},
+    'formData': {
+      'animationKeys': ['duration', 'ease', 'xPercent', 'yPercent', 'background', 'rotate', 'scale', 'skew'],
+      'animationStyle': {'xPercent': 100}
+    },
+    'level': 1,
+    'children': [{
+      'templateView': 'customizeAnimation',
+      'id': '202601291459297147194',
+      'linkName': 'PB202601291459297147194',
+      'uuid': 'd4889056-9ff0-44bf-9d2a-97bc3c0db7ed202601291459297147194',
+      'type': 'panel',
+      'className': 'panel202601291459297147194',
+      'name': '竖屏',
+      'horizontal': false,
+      'style': {'backgroundImage': ' linear-gradient(132deg, rgb(244, 208, 63) 0%, rgb(22, 160, 133) 100%)'},
+      'formData': {'animationKeys': [], 'animationStyle': {}},
+      'level': 2,
+      'children': [],
+      'pid': '202601291459297126373',
+      'parentClassName': 'panel202601291459297126373'
+    }],
+    'pid': 0
+  }, {
+    'templateView': 'customizeAnimation',
+    'id': '202601291459299284321',
+    'linkName': 'PB202601291459299284321',
+    'uuid': '51d7ed11-d54b-4827-a021-3c57f35b62fe202601291459299284321',
+    'type': 'panel',
+    'className': 'panel202601291459299284321',
+    'name': '竖屏',
+    'horizontal': false,
+    'style': {'backgroundImage': ' linear-gradient(rgb(255, 255, 255) 0%, rgb(98, 132, 255) 50%, rgb(255, 0, 0) 100%)'},
+    'formData': {
+      'animationKeys': ['duration', 'ease', 'xPercent', 'yPercent', 'background', 'rotate', 'scale', 'skew'],
+      'animationStyle': {'xPercent': 100}
+    },
+    'level': 1,
+    'children': [{
+      'templateView': 'customizeAnimation',
+      'id': '202601291459299281113',
+      'linkName': 'PB202601291459299281113',
+      'uuid': '6d95a1a6-4554-4507-a68c-1d9ad9a45609202601291459299281113',
+      'type': 'panel',
+      'className': 'panel202601291459299281113',
+      'name': '竖屏',
+      'horizontal': false,
+      'style': {'backgroundImage': ' linear-gradient(43deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 46%, rgb(255, 204, 112) 100%)'},
+      'formData': {'animationKeys': [], 'animationStyle': {}},
+      'level': 2,
+      'children': [],
+      'pid': '202601291459299284321',
+      'parentClassName': 'panel202601291459299284321'
+    }],
+    'pid': 0
+  }, {
+    'templateView': 'customizeAnimation',
+    'id': '202601291459301371186',
+    'linkName': 'PB202601291459301371186',
+    'uuid': '58ba884a-5d6d-4d74-8ee7-c666e82c1557202601291459301371186',
+    'type': 'panel',
+    'className': 'panel202601291459301371186',
+    'name': '竖屏',
+    'horizontal': false,
+    'style': {'backgroundImage': ' linear-gradient(90deg, rgb(116, 235, 213) 0%, rgb(159, 172, 230) 100%)'},
+    'formData': {
+      'animationKeys': ['duration', 'ease', 'xPercent', 'yPercent', 'background', 'rotate', 'scale', 'skew'],
+      'animationStyle': {'xPercent': 100}
+    },
+    'level': 1,
+    'children': [{
+      'templateView': 'customizeAnimation',
+      'id': '202601291459301373225',
+      'linkName': 'PB202601291459301373225',
+      'uuid': '2770b8a2-6e8f-44aa-a954-846e6c3b4861202601291459301373225',
+      'type': 'panel',
+      'className': 'panel202601291459301373225',
+      'name': '竖屏',
+      'horizontal': false,
+      'style': {'backgroundImage': ' linear-gradient(147deg, rgb(255, 229, 59) 0%, rgb(255, 37, 37) 74%)'},
+      'formData': {'animationKeys': [], 'animationStyle': {}},
+      'level': 2,
+      'children': [],
+      'pid': '202601291459301371186',
+      'parentClassName': 'panel202601291459301371186'
+    }],
+    'pid': 0
+  }, {
+    'templateView': 'customizeAnimation',
+    'id': '202601291459303683060',
+    'linkName': 'PB202601291459303683060',
+    'uuid': '39f4b10b-d344-4e28-9145-04ccb564fe18202601291459303683060',
+    'type': 'panel',
+    'className': 'panel202601291459303683060',
+    'name': '竖屏',
+    'horizontal': false,
+    'style': {'backgroundImage': ' linear-gradient(62deg, rgb(251, 171, 126) 0%, rgb(247, 206, 104) 100%)'},
+    'formData': {
+      'animationKeys': ['duration', 'ease', 'xPercent', 'yPercent', 'background', 'rotate', 'scale', 'skew'],
+      'animationStyle': {'xPercent': 100}
+    },
+    'level': 1,
+    'children': [{
+      'templateView': 'customizeAnimation',
+      'id': '202601291459303688686',
+      'linkName': 'PB202601291459303688686',
+      'uuid': '9b7f7a49-7bab-4225-9e38-e46b0d5e0b3e202601291459303688686',
+      'type': 'panel',
+      'className': 'panel202601291459303688686',
+      'name': '竖屏',
+      'horizontal': false,
+      'style': {'backgroundImage': ' linear-gradient(225deg, rgb(255, 60, 172) 0%, rgb(120, 75, 160) 50%, rgb(43, 134, 197) 100%)'},
+      'formData': {'animationKeys': [], 'animationStyle': {}},
+      'level': 2,
+      'children': [],
+      'pid': '202601291459303683060',
+      'parentClassName': 'panel202601291459303683060'
+    }],
+    'pid': 0
+  }, {
+    'templateView': 'customizeAnimation',
+    'id': '202601291459313055846',
+    'linkName': 'PB202601291459313055846',
+    'uuid': 'ff5cd92a-2ec8-4efe-b772-6cc24ca47bbe202601291459313055846',
+    'type': 'panel',
+    'className': 'panel202601291459313055846',
+    'name': '竖屏',
+    'horizontal': false,
+    'style': {'backgroundImage': ' linear-gradient(135deg, rgb(139, 198, 236) 0%, rgb(149, 153, 226) 100%)'},
+    'formData': {
+      'animationKeys': ['duration', 'ease', 'xPercent', 'yPercent', 'background', 'rotate', 'scale', 'skew'],
+      'animationStyle': {'xPercent': 100}
+    },
+    'level': 1,
+    'children': [{
+      'templateView': 'customizeAnimation',
+      'id': '202601291459313052219',
+      'linkName': 'PB202601291459313052219',
+      'uuid': 'c3512e0e-b987-4111-9d57-ff6beeb2054c202601291459313052219',
+      'type': 'panel',
+      'className': 'panel202601291459313052219',
+      'name': '竖屏',
+      'horizontal': false,
+      'style': {'backgroundImage': ' linear-gradient(90deg, rgb(250, 217, 97) 0%, rgb(247, 107, 28) 100%)'},
+      'formData': {'animationKeys': [], 'animationStyle': {}},
+      'level': 2,
+      'children': [],
+      'pid': '202601291459313055846',
+      'parentClassName': 'panel202601291459313055846'
+    }],
+    'pid': 0
+  }],
+  'id': 17
+}

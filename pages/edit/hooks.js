@@ -828,7 +828,7 @@ export const UseAnimation = () => {
   }
 
 
-  // 自定义滚动
+  // 横向滚动
   const customizeAnimation = (pageList = [], classNane = 'vertical') => {
     ScrollTrigger.refresh()
 
