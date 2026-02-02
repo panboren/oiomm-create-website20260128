@@ -711,21 +711,29 @@ const multiverseAnimation = (className = 'dimensional-panel') => {
 const jumpToDimension = (index: number) => {
   console.log('jumpToDimension called with index:', index, 'mainScrollTrigger:', !!mainScrollTrigger)
 
-  if (!mainScrollTrigger) {
-    console.warn('mainScrollTrigger is not initialized yet')
-    return
-  }
-
   const panels = document.querySelectorAll('.dimensional-panel')
-  const progress = index / (panels.length - 1)
+  if (panels[index]) {
+    // 直接滚动到目标元素,更可靠
+    const targetElement = panels[index] as HTMLElement
+    const targetPosition = targetElement.offsetTop
 
-  console.log('Jumping to progress:', progress, 'index:', index, 'total panels:', panels.length)
+    console.log('Jumping to position:', targetPosition, 'index:', index, 'total panels:', panels.length)
 
-  gsap.to(mainScrollTrigger, {
-    progress: progress,
-    duration: 1,
-    ease: 'power2.inOut'
-  })
+    // 临时允许 body 滚动
+    const body = document.body
+    const originalOverflow = body.style.overflow
+    body.style.overflow = 'auto'
+
+    gsap.to(window, {
+      duration: 1,
+      scrollTo: { y: targetPosition, autoKill: false },
+      ease: 'power2.inOut',
+      onComplete: () => {
+        // 滚动完成后恢复原始设置
+        body.style.overflow = originalOverflow
+      }
+    })
+  }
 }
 
 // 跳转到下一维度

@@ -1012,15 +1012,37 @@ onMounted(() => {
 
   // 平滑滚动到指定section
   const scrollToSection = (index: number) => {
-    const panels = gsap.utils.toArray('.vertical')
-    if (panels[index] && globalTimeline) {
-      const targetProgress = index / (panels.length - 1)
-      gsap.to(globalTimeline, {
-        progress: targetProgress,
-        duration: 1,
-        ease: 'power3.inOut'
-      })
+    const hrefMap = ['#home', '#about', '#services', '#portfolio', '#contact']
+    const href = hrefMap[index]
+
+    if (!href) return
+
+    const sections = Array.from(document.querySelectorAll('.section.vertical')) as HTMLElement[]
+
+    let targetIndex = -1
+    for (let i = 0; i < sections.length; i++) {
+      if (sections[i].id === href.substring(1)) {
+        targetIndex = i
+        break
+      }
     }
+
+    if (targetIndex === -1) return
+
+    const targetPosition = targetIndex * window.innerHeight
+
+    const body = document.body
+    const originalOverflow = body.style.overflow
+    body.style.overflow = 'auto'
+
+    gsap.to(window, {
+      duration: 1,
+      scrollTo: { y: targetPosition, autoKill: false, offsetY: 0 },
+      ease: 'power3.inOut',
+      onComplete: () => {
+        body.style.overflow = originalOverflow
+      }
+    })
   }
 
   // 导航链接点击跳转
@@ -1100,7 +1122,7 @@ body {
 
 .website-container {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 // 导航栏
@@ -1163,8 +1185,7 @@ body {
 
 // 通用区块
 .section {
-  height: 100vh;
-  overflow: hidden;
+  min-height: 100vh;
   padding: 100px 0;
   position: relative;
 }

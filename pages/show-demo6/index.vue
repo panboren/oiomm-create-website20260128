@@ -1025,17 +1025,33 @@ onMounted(() => {
     })
   })
 
-  // 平滑滚动到指定section
+  // 平滑滚动到指定section - 适配横向滚动动画
   const scrollToSection = (index: number) => {
-    const panels = gsap.utils.toArray('.vertical')
-    if (panels[index] && globalTimeline) {
-      const targetProgress = index / (panels.length - 1)
-      gsap.to(globalTimeline, {
-        progress: targetProgress,
-        duration: 1,
-        ease: 'power3.inOut'
-      })
+    const hrefMap = ['#home', '#about', '#services', '#portfolio', '#contact']
+    const href = hrefMap[index]
+
+    if (!href) return
+
+    const sections = Array.from(document.querySelectorAll('.section.vertical')) as HTMLElement[]
+
+    let targetIndex = -1
+    for (let i = 0; i < sections.length; i++) {
+      if (sections[i].id === href.substring(1)) {
+        targetIndex = i
+        break
+      }
     }
+
+    if (targetIndex === -1 || !globalTimeline) return
+
+    // 使用GSAP timeline的progress来控制横向滚动
+    const totalProgress = targetIndex / (sections.length - 1)
+
+    gsap.to(globalTimeline, {
+      progress: totalProgress,
+      duration: 1,
+      ease: 'power3.inOut'
+    })
   }
 
   // 导航链接点击跳转
@@ -1115,7 +1131,7 @@ body {
 
 .website-container {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 // 导航栏
@@ -1178,8 +1194,7 @@ body {
 
 // 通用区块
 .section {
-  height: 100vh;
-  overflow: hidden;
+  min-height: 100vh;
   padding: 100px 0;
   position: relative;
 }
