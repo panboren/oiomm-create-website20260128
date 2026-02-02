@@ -1116,38 +1116,30 @@ onMounted(() => {
     })
   })
 
-  // 平滑滚动到指定section
+  // 平滑滚动到指定section - 简化版本
   const scrollToSection = (index: number) => {
     const hrefMap = ['#home', '#about', '#services', '#portfolio', '#contact']
     const href = hrefMap[index]
 
     if (!href) return
 
-    const sections = Array.from(document.querySelectorAll('.section.vertical')) as HTMLElement[]
+    // 找到目标section元素
+    const targetSection = document.querySelector(href) as HTMLElement
+    if (!targetSection) return
 
-    let targetIndex = -1
-    for (let i = 0; i < sections.length; i++) {
-      if (sections[i].id === href.substring(1)) {
-        targetIndex = i
-        break
-      }
-    }
+    // 计算滚动位置
+    const targetPosition = targetSection.offsetTop
 
-    if (targetIndex === -1) return
-
-    const targetPosition = targetIndex * window.innerHeight
-
-    const body = document.body
-    const originalOverflow = body.style.overflow
-    body.style.overflow = 'auto'
+    console.log('滚动到:', {
+      href,
+      targetPosition,
+      elementId: href.substring(1)
+    })
 
     gsap.to(window, {
       duration: 1,
       scrollTo: { y: targetPosition, autoKill: false, offsetY: 0 },
-      ease: 'power3.inOut',
-      onComplete: () => {
-        body.style.overflow = originalOverflow
-      }
+      ease: 'power3.inOut'
     })
   }
 

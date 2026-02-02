@@ -1010,13 +1010,14 @@ onMounted(() => {
     })
   })
 
-  // 平滑滚动到指定section
+  // 平滑滚动到指定section - 横向滚动动画适配
   const scrollToSection = (index: number) => {
     const hrefMap = ['#home', '#about', '#services', '#portfolio', '#contact']
     const href = hrefMap[index]
 
     if (!href) return
 
+    // 找到对应的section索引
     const sections = Array.from(document.querySelectorAll('.section.vertical')) as HTMLElement[]
 
     let targetIndex = -1
@@ -1029,19 +1030,24 @@ onMounted(() => {
 
     if (targetIndex === -1) return
 
-    const targetPosition = targetIndex * window.innerHeight
+    console.log('横向滚动到:', {
+      href,
+      targetIndex,
+      windowWidth: window.innerWidth
+    })
 
-    const body = document.body
-    const originalOverflow = body.style.overflow
-    body.style.overflow = 'auto'
+    // 计算垂直滚动位置
+    // ScrollTrigger使用垂直滚动来控制水平移动
+    // 每个section对应的垂直滚动距离是 (totalWidth / (panels.length - 1))
+    const panels = gsap.utils.toArray('.section.vertical')
+    const totalWidth = panels.length * window.innerWidth
+    const scrollPerSection = totalWidth / (panels.length - 1)
+    const scrollPosition = targetIndex * scrollPerSection
 
     gsap.to(window, {
       duration: 1,
-      scrollTo: { y: targetPosition, autoKill: false, offsetY: 0 },
-      ease: 'power3.inOut',
-      onComplete: () => {
-        body.style.overflow = originalOverflow
-      }
+      scrollTo: { y: scrollPosition, autoKill: false },
+      ease: 'power3.inOut'
     })
   }
 

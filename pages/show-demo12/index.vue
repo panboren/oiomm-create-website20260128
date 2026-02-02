@@ -712,28 +712,27 @@ const jumpToDimension = (index: number) => {
   console.log('jumpToDimension called with index:', index, 'mainScrollTrigger:', !!mainScrollTrigger)
 
   const panels = document.querySelectorAll('.dimensional-panel')
-  if (panels[index]) {
-    // 直接滚动到目标元素,更可靠
-    const targetElement = panels[index] as HTMLElement
-    const targetPosition = targetElement.offsetTop
+  if (!panels[index]) return
 
-    console.log('Jumping to position:', targetPosition, 'index:', index, 'total panels:', panels.length)
+  const targetElement = panels[index] as HTMLElement
+  const multiverseContainer = document.querySelector('.multiverse-container') as HTMLElement
 
-    // 临时允许 body 滚动
-    const body = document.body
-    const originalOverflow = body.style.overflow
-    body.style.overflow = 'auto'
+  if (!multiverseContainer) return
 
-    gsap.to(window, {
-      duration: 1,
-      scrollTo: { y: targetPosition, autoKill: false },
-      ease: 'power2.inOut',
-      onComplete: () => {
-        // 滚动完成后恢复原始设置
-        body.style.overflow = originalOverflow
-      }
-    })
-  }
+  // 计算目标位置 - 使用垂直滚动来控制横向移动
+  // ScrollTrigger的end是 multiverseContainer.scrollWidth - window.innerWidth
+  const totalPanels = panels.length
+  const totalScrollDistance = multiverseContainer.scrollWidth - window.innerWidth
+  const scrollPerPanel = totalScrollDistance / (totalPanels - 1)
+  const targetScrollPosition = index * scrollPerPanel
+
+  console.log('Jumping to dimension:', index, 'totalScrollDistance:', totalScrollDistance, 'targetScrollPosition:', targetScrollPosition)
+
+  gsap.to(window, {
+    duration: 1,
+    scrollTo: { y: targetScrollPosition, autoKill: false },
+    ease: 'power2.inOut'
+  })
 }
 
 // 跳转到下一维度
