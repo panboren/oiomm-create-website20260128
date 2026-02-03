@@ -71,6 +71,62 @@ let list = ref([
     templateView: 'scalePanelScrollAnimation',
     background: getColor(),
     ease: getHover()
+  },
+  {
+    id: 4,
+    title: '3D卡片翻转',
+    templateView: 'threeDCardFlipAnimation',
+    background: getColor(),
+    ease: getHover()
+  },
+  {
+    id: 5,
+    title: '粒子波浪',
+    templateView: 'particleWaveAnimation',
+    background: getColor(),
+    ease: getHover()
+  },
+  {
+    id: 6,
+    title: '虫洞穿梭',
+    templateView: 'wormholeAnimation',
+    background: getColor(),
+    ease: getHover()
+  },
+  {
+    id: 7,
+    title: '玻璃破碎',
+    templateView: 'glassShatterAnimation',
+    background: getColor(),
+    ease: getHover()
+  },
+  {
+    id: 8,
+    title: '液体流动',
+    templateView: 'liquidFlowAnimation',
+    background: getColor(),
+    ease: getHover()
+  },
+  {
+    id: 9,
+    title: '分形生长',
+    templateView: 'fractalGrowAnimation',
+    background: getColor(),
+    ease: getHover()
+  },
+  {
+    id: 10,
+    title: '量子纠缠',
+    templateView: 'quantumEntanglementAnimation',
+    background: getColor(),
+    ease: getHover()
+  },
+  {
+    id: 11,
+    title: '磁场扭曲',
+    templateView: 'magneticDistortionAnimation',
+    background: getColor(),
+    ease: getHover()
   }
 ])
 

@@ -33,11 +33,11 @@
   </div>
 </template>
 <script setup lang="ts">
-import {UseAnimation} from '~~/pages/edit/hooks'
-import ScrollTrigger from 'gsap/ScrollTrigger'
 definePageMeta({
   layout: false
 })
+import {UseAnimation} from '~~/pages/edit/hooks'
+import ScrollTrigger from 'gsap/ScrollTrigger'
 import {onMounted, onBeforeUnmount, watch} from 'vue'
 // import TestNav from '~/components/test-nav/test-nav.vue'
 let animation = UseAnimation()
@@ -124,7 +124,15 @@ const executeAnimation = async (animationType) => {
     } else if (animationType === 'initHorizontalAnimation') {
       cleanup = animation[animationType](props.pageList)
     } else if (animationType === 'infinitePanelScrollAnimation' ||
-               animationType === 'scalePanelScrollAnimation') {
+               animationType === 'scalePanelScrollAnimation' ||
+               animationType === 'threeDCardFlipAnimation' ||
+               animationType === 'particleWaveAnimation' ||
+               animationType === 'wormholeAnimation' ||
+               animationType === 'glassShatterAnimation' ||
+               animationType === 'liquidFlowAnimation' ||
+               animationType === 'fractalGrowAnimation' ||
+               animationType === 'quantumEntanglementAnimation' ||
+               animationType === 'magneticDistortionAnimation') {
       cleanup = animation[animationType]()
     }
 

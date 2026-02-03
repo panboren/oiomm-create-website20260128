@@ -4,6 +4,7 @@
 * @LastModifiedBy: Administrator$
 * @QQ: 3248874747
 */
+import { ref, onMounted, onBeforeUnmount, nextTick } from 'vue'
 import gsap from 'gsap/dist/gsap.js'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger.js'
 import { ScrollToPlugin } from 'gsap/dist/ScrollToPlugin.js'
@@ -12,6 +13,17 @@ import { isTrue, isTrueObject } from '~~/utils/index.js'
 import { getId } from '~~/pages/template/compoments/right/config.js'
 import { computedStyle } from '~~/components/form-dialog/config.js'
 import { getOriginalStyles } from '~~/plugins/directives.js'
+// 导入新模板
+import {
+  threeDCardFlipAnimation,
+  particleWaveAnimation,
+  wormholeAnimation,
+  glassShatterAnimation,
+  liquidFlowAnimation,
+  fractalGrowAnimation,
+  quantumEntanglementAnimation,
+  magneticDistortionAnimation
+} from './newTemplates.js'
 
 // 单例注册插件
 let pluginsRegistered = false
@@ -988,9 +1000,19 @@ export const UseAnimation = () => {
     initHorizontalAnimation,
     infinitePanelScrollAnimation,
     scalePanelScrollAnimation,
-    customizeAnimation
+    customizeAnimation,
+    // 新增酷炫模板
+    threeDCardFlipAnimation,
+    particleWaveAnimation,
+    wormholeAnimation,
+    glassShatterAnimation,
+    liquidFlowAnimation,
+    fractalGrowAnimation,
+    quantumEntanglementAnimation,
+    magneticDistortionAnimation
   }
 }
+
 // 监听出现窗口
 export const UseInViewportMiddle = ({
   threshold = 0.5,

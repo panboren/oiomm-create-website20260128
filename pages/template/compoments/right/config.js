@@ -179,6 +179,55 @@ export let butOption = {
   scalePanelScrollAnimation:{
     horizontalDisable: true,
     verticalDisable: false
+  },
+  // 新增酷炫模板
+  threeDCardFlipAnimation:{
+    horizontalDisable: false,
+    verticalDisable: false,
+    name: '3D卡片翻转',
+    description: '面板进行3D翻转效果'
+  },
+  particleWaveAnimation:{
+    horizontalDisable: true,
+    verticalDisable: false,
+    name: '粒子波浪',
+    description: '面板以波浪形式进入，带粒子效果'
+  },
+  wormholeAnimation:{
+    horizontalDisable: true,
+    verticalDisable: false,
+    name: '虫洞穿梭',
+    description: '面板以虫洞效果缩放穿梭'
+  },
+  glassShatterAnimation:{
+    horizontalDisable: true,
+    verticalDisable: false,
+    name: '玻璃破碎',
+    description: '面板以玻璃破碎方式进入'
+  },
+  liquidFlowAnimation:{
+    horizontalDisable: true,
+    verticalDisable: false,
+    name: '液体流动',
+    description: '面板以液体流动方式变换'
+  },
+  fractalGrowAnimation:{
+    horizontalDisable: true,
+    verticalDisable: false,
+    name: '分形生长',
+    description: '面板以分形模式生长展开'
+  },
+  quantumEntanglementAnimation:{
+    horizontalDisable: false,
+    verticalDisable: false,
+    name: '量子纠缠',
+    description: '多面板同步量子纠缠动画'
+  },
+  magneticDistortionAnimation:{
+    horizontalDisable: true,
+    verticalDisable: false,
+    name: '磁场扭曲',
+    description: '面板在磁场中扭曲变形'
   }
 
 }
