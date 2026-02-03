@@ -1,11 +1,11 @@
 <template>
-  <div>{{pageList}}</div>
-<!--  <tool v-model="toolId" @change="changeTool"/>
+<!--  <div>{{pageList}}</div>-->
+  <tool v-model="toolId" @change="changeTool"/>
   <tree v-model="showTree" :data="pageList"></tree>
   <project-list v-model="showProject" :data="projectListData" @remove="remove" @change="changeProject"></project-list>
   <animation-layer v-if="pageList && pageList.length>0" :pageList="pageList" :disable="true"></animation-layer>
   <empty-template v-else></empty-template>
-  <ruler-tool v-if="showRuler"/>-->
+  <ruler-tool v-if="showRuler"/>
 </template>
 <script setup lang="ts">
 definePageMeta({
