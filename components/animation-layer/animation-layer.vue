@@ -125,6 +125,7 @@ const executeAnimation = async (animationType) => {
       cleanup = animation[animationType](props.pageList)
     } else if (animationType === 'infinitePanelScrollAnimation' ||
                animationType === 'scalePanelScrollAnimation' ||
+               // 专业级模板 V4-V11
                animationType === 'threeDCardFlipAnimation' ||
                animationType === 'particleWaveAnimation' ||
                animationType === 'wormholeAnimation' ||
@@ -132,7 +133,43 @@ const executeAnimation = async (animationType) => {
                animationType === 'liquidFlowAnimation' ||
                animationType === 'fractalGrowAnimation' ||
                animationType === 'quantumEntanglementAnimation' ||
-               animationType === 'magneticDistortionAnimation') {
+               animationType === 'magneticDistortionAnimation' ||
+               // 高级模板 V12-V19
+               animationType === 'origamiFoldAnimation' ||
+               animationType === 'moebiusTransformAnimation' ||
+               animationType === 'auroraFlowAnimation' ||
+               animationType === 'particleConvergeAnimation' ||
+               animationType === 'dnaHelixAnimation' ||
+               animationType === 'honeycombUnfoldAnimation' ||
+               animationType === 'hologramScanAnimation' ||
+               animationType === 'kaleidoscopeMirrorAnimation' ||
+               // 精英级模板 V20-V27
+               animationType === 'liquidSurfaceTensionAnimation' ||
+               animationType === 'electromagneticWaveAnimation' ||
+               animationType === 'fragmentReassembleAnimation' ||
+               animationType === 'parallaxDepthAnimation' ||
+               animationType === 'matrixRainAnimation' ||
+               animationType === 'galaxyRotationAnimation' ||
+               animationType === 'fluidVortexAnimation' ||
+               animationType === 'panoramaUnfoldAnimation' ||
+               // 传奇级模板 V28-V35
+               animationType === 'interstellarPortalAnimation' ||
+               animationType === 'quantumTunnelAnimation' ||
+               animationType === 'cyberspaceAnimation' ||
+               animationType === 'liquidMetalAnimation' ||
+               animationType === 'timeFoldAnimation' ||
+               animationType === 'nebulaBirthAnimation' ||
+               animationType === 'neonCityAnimation' ||
+               animationType === 'ultimateParallaxAnimation' ||
+               // 精华级模板 V36-V43
+               animationType === 'smoothHorizontalAnimation' ||
+               animationType === 'elasticScaleAnimation' ||
+               animationType === 'infiniteSmoothAnimation' ||
+               animationType === 'fadeUpAnimation' ||
+               animationType === 'staggeredHorizontalAnimation' ||
+               animationType === 'scaleFadeAnimation' ||
+               animationType === 'infiniteRotateAnimation' ||
+               animationType === 'smoothComboAnimation') {
       cleanup = animation[animationType]()
     }
 

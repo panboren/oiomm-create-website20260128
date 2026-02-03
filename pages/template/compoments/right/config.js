@@ -228,6 +228,202 @@ export let butOption = {
     verticalDisable: false,
     name: '磁场扭曲',
     description: '面板在磁场中扭曲变形'
+  },
+  // 专业级模板 V12-V19
+  origamiFoldAnimation:{
+    horizontalDisable: true,
+    verticalDisable: false,
+    name: '纸张折叠',
+    description: '3D纸张逐层折叠展开效果'
+  },
+  moebiusTransformAnimation:{
+    horizontalDisable: true,
+    verticalDisable: false,
+    name: '莫比乌斯环',
+    description: '无限循环拓扑变换'
+  },
+  auroraFlowAnimation:{
+    horizontalDisable: false,
+    verticalDisable: false,
+    name: '极光流淌',
+    description: '自然极光光效流动'
+  },
+  particleConvergeAnimation:{
+    horizontalDisable: true,
+    verticalDisable: false,
+    name: '粒子汇聚',
+    description: '粒子从四周汇聚成形'
+  },
+  dnaHelixAnimation:{
+    horizontalDisable: false,
+    verticalDisable: false,
+    name: 'DNA双螺旋',
+    description: '生物双螺旋旋转结构'
+  },
+  honeycombUnfoldAnimation:{
+    horizontalDisable: true,
+    verticalDisable: false,
+    name: '蜂巢展开',
+    description: '六边形网格有序展开'
+  },
+  hologramScanAnimation:{
+    horizontalDisable: false,
+    verticalDisable: false,
+    name: '全息扫描',
+    description: '未来感全息投影扫描'
+  },
+  kaleidoscopeMirrorAnimation:{
+    horizontalDisable: false,
+    verticalDisable: false,
+    name: '万花筒镜像',
+    description: '对称镜像几何变换'
+  },
+  // 精英级模板 V20-V27
+  liquidSurfaceTensionAnimation:{
+    horizontalDisable: true,
+    verticalDisable: false,
+    name: '液体张力',
+    description: '物理表面张力液滴效果'
+  },
+  electromagneticWaveAnimation:{
+    horizontalDisable: false,
+    verticalDisable: false,
+    name: '电磁波动',
+    description: 'SVG正弦波电磁场'
+  },
+  fragmentReassembleAnimation:{
+    horizontalDisable: true,
+    verticalDisable: false,
+    name: '碎片重组',
+    description: '碎片从四面八方汇聚'
+  },
+  parallaxDepthAnimation:{
+    horizontalDisable: false,
+    verticalDisable: false,
+    name: '多层视差',
+    description: '多层3D深度视差效果'
+  },
+  matrixRainAnimation:{
+    horizontalDisable: false,
+    verticalDisable: false,
+    name: '矩阵代码雨',
+    description: '赛博朋克风格代码雨'
+  },
+  galaxyRotationAnimation:{
+    horizontalDisable: true,
+    verticalDisable: false,
+    name: '星系旋转',
+    description: '宇宙星系螺旋旋转'
+  },
+  fluidVortexAnimation:{
+    horizontalDisable: true,
+    verticalDisable: false,
+    name: '流体涡旋',
+    description: '多层流体涡旋流动'
+  },
+  panoramaUnfoldAnimation:{
+    horizontalDisable: true,
+    verticalDisable: false,
+    name: '全景展开',
+    description: '360度全景柱状展开'
+  },
+  // 传奇级模板 V28-V35
+  interstellarPortalAnimation:{
+    horizontalDisable: true,
+    verticalDisable: false,
+    name: '星际传送门',
+    description: '穿越时空的传送门效果'
+  },
+  quantumTunnelAnimation:{
+    horizontalDisable: true,
+    verticalDisable: false,
+    name: '量子时空穿越',
+    description: '量子隧穿从粒子态重组'
+  },
+  cyberspaceAnimation:{
+    horizontalDisable: false,
+    verticalDisable: false,
+    name: '赛博空间',
+    description: '沉浸式赛博朋克空间'
+  },
+  liquidMetalAnimation:{
+    horizontalDisable: true,
+    verticalDisable: false,
+    name: '液态金属',
+    description: '仿真的液态金属变形'
+  },
+  timeFoldAnimation:{
+    horizontalDisable: true,
+    verticalDisable: false,
+    name: '时间折叠',
+    description: '时间循环和空间折叠'
+  },
+  nebulaBirthAnimation:{
+    horizontalDisable: true,
+    verticalDisable: false,
+    name: '星云诞生',
+    description: '星云从混沌到有序的演化'
+  },
+  neonCityAnimation:{
+    horizontalDisable: false,
+    verticalDisable: false,
+    name: '霓虹城市',
+    description: '赛博朋克霓虹城市夜景'
+  },
+  ultimateParallaxAnimation:{
+    horizontalDisable: false,
+    verticalDisable: false,
+    name: '极限视差',
+    description: '极致深度的3D空间体验'
+  },
+  // 精华级模板 V36-V43
+  smoothHorizontalAnimation:{
+    horizontalDisable: false,
+    verticalDisable: false,
+    name: '平滑横向',
+    description: '更自然的ease曲线，更流畅的滚动'
+  },
+  elasticScaleAnimation:{
+    horizontalDisable: true,
+    verticalDisable: false,
+    name: '弹性缩放',
+    description: 'back缓动加过冲效果，更有活力'
+  },
+  infiniteSmoothAnimation:{
+    horizontalDisable: true,
+    verticalDisable: false,
+    name: '无限循环优化',
+    description: '无缝衔接加snap吸附'
+  },
+  fadeUpAnimation:{
+    horizontalDisable: true,
+    verticalDisable: false,
+    name: '淡入上移',
+    description: '经典淡入向上移动，简洁优雅'
+  },
+  staggeredHorizontalAnimation:{
+    horizontalDisable: false,
+    verticalDisable: false,
+    name: '交错横向',
+    description: '不同面板不同速度，更有层次感'
+  },
+  scaleFadeAnimation:{
+    horizontalDisable: true,
+    verticalDisable: false,
+    name: '缩放淡入',
+    description: '从中心缩放加淡入，简洁大方'
+  },
+  infiniteRotateAnimation:{
+    horizontalDisable: true,
+    verticalDisable: false,
+    name: '无限旋转',
+    description: '无限滚动加持续旋转'
+  },
+  smoothComboAnimation:{
+    horizontalDisable: true,
+    verticalDisable: false,
+    name: '平滑组合',
+    description: '横向缩放淡入三合一'
   }
 
 }

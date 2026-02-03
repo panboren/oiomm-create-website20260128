@@ -13,7 +13,7 @@ import { isTrue, isTrueObject } from '~~/utils/index.js'
 import { getId } from '~~/pages/template/compoments/right/config.js'
 import { computedStyle } from '~~/components/form-dialog/config.js'
 import { getOriginalStyles } from '~~/plugins/directives.js'
-// 导入新模板
+// 导入新模板 (V4-V11)
 import {
   threeDCardFlipAnimation,
   particleWaveAnimation,
@@ -24,6 +24,54 @@ import {
   quantumEntanglementAnimation,
   magneticDistortionAnimation
 } from './newTemplates.js'
+
+// 导入专业级模板 (V12-V19)
+import {
+  origamiFoldAnimation,
+  moebiusTransformAnimation,
+  auroraFlowAnimation,
+  particleConvergeAnimation,
+  dnaHelixAnimation,
+  honeycombUnfoldAnimation,
+  hologramScanAnimation,
+  kaleidoscopeMirrorAnimation
+} from './proTemplates.js'
+
+// 导入精英级模板 (V20-V27)
+import {
+  liquidSurfaceTensionAnimation,
+  electromagneticWaveAnimation,
+  fragmentReassembleAnimation,
+  parallaxDepthAnimation,
+  matrixRainAnimation,
+  galaxyRotationAnimation,
+  fluidVortexAnimation,
+  panoramaUnfoldAnimation
+} from './eliteTemplates.js'
+
+// 导入传奇级模板 (V28-V35)
+import {
+  interstellarPortalAnimation,
+  quantumTunnelAnimation,
+  cyberspaceAnimation,
+  liquidMetalAnimation,
+  timeFoldAnimation,
+  nebulaBirthAnimation,
+  neonCityAnimation,
+  ultimateParallaxAnimation
+} from './legendTemplates.js'
+
+// 导入精华级模板 (V36-V43)
+import {
+  smoothHorizontalAnimation,
+  elasticScaleAnimation,
+  infiniteSmoothAnimation,
+  fadeUpAnimation,
+  staggeredHorizontalAnimation,
+  scaleFadeAnimation,
+  infiniteRotateAnimation,
+  smoothComboAnimation
+} from './elitePlusTemplates.js'
 
 // 单例注册插件
 let pluginsRegistered = false
@@ -1001,7 +1049,7 @@ export const UseAnimation = () => {
     infinitePanelScrollAnimation,
     scalePanelScrollAnimation,
     customizeAnimation,
-    // 新增酷炫模板
+    // 专业级模板 V4-V11
     threeDCardFlipAnimation,
     particleWaveAnimation,
     wormholeAnimation,
@@ -1009,7 +1057,43 @@ export const UseAnimation = () => {
     liquidFlowAnimation,
     fractalGrowAnimation,
     quantumEntanglementAnimation,
-    magneticDistortionAnimation
+    magneticDistortionAnimation,
+    // 高级模板 V12-V19
+    origamiFoldAnimation,
+    moebiusTransformAnimation,
+    auroraFlowAnimation,
+    particleConvergeAnimation,
+    dnaHelixAnimation,
+    honeycombUnfoldAnimation,
+    hologramScanAnimation,
+    kaleidoscopeMirrorAnimation,
+    // 精英级模板 V20-V27
+    liquidSurfaceTensionAnimation,
+    electromagneticWaveAnimation,
+    fragmentReassembleAnimation,
+    parallaxDepthAnimation,
+    matrixRainAnimation,
+    galaxyRotationAnimation,
+    fluidVortexAnimation,
+    panoramaUnfoldAnimation,
+    // 传奇级模板 V28-V35
+    interstellarPortalAnimation,
+    quantumTunnelAnimation,
+    cyberspaceAnimation,
+    liquidMetalAnimation,
+    timeFoldAnimation,
+    nebulaBirthAnimation,
+    neonCityAnimation,
+    ultimateParallaxAnimation,
+    // 精华级模板 V36-V43
+    smoothHorizontalAnimation,
+    elasticScaleAnimation,
+    infiniteSmoothAnimation,
+    fadeUpAnimation,
+    staggeredHorizontalAnimation,
+    scaleFadeAnimation,
+    infiniteRotateAnimation,
+    smoothComboAnimation
   }
 }
 
